@@ -18,7 +18,7 @@ stages:
         continueOnError: false
         steps:
         - task: PublishPipelineArtifact@1
-          displayName: Publish Artifacts1554
+          displayName: Publish Artifacts4411
           inputs:
             targetPath: '$(System.DefaultWorkingDirectory)/terraform-manifests'
             artifact: 'terraform-manifests-out'
