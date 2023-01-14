@@ -27,7 +27,6 @@ stages:
           displayName: Terraform Install
           inputs:
             terraformVersion: 'latest'
-        
         - task: TerraformCLI@0
           displayName: Terraform Init
           inputs:
@@ -46,3 +45,4 @@ stages:
             command: 'validate'
             workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
             allowTelemetryCollection: false
+        
